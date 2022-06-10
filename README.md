@@ -1,1 +1,2 @@
 # cdk-databrew-cicd-go
+Go bindings for [cdk-databrew-cicd-go](https://github.com/HsiehShuJeng/cdk-databrew-cicd-go.git). These are automatically updated from the [cdk-databrew-cicd-go](https://github.com/HsiehShuJeng/cdk-databrew-cicd-go.git) repository - if you would like to report a bug or make a pull request, please submit it there.  
