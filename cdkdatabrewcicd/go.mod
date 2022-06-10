@@ -1,4 +1,4 @@
-module github.com/HsiehShuJeng/cdk-databrew-cicd-go/cdkdatabrewcicd
+module github.com/HsiehShuJeng/cdk-databrew-cicd-go/cdkdatabrewcicd/v2
 
 go 1.16
 
