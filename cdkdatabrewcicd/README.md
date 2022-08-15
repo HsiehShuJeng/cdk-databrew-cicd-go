@@ -151,8 +151,8 @@ $ mvn package
 .
 <properties>
       <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-      <cdk.version>1.107.0</cdk.version>
-      <constrcut.verion>0.1.4</constrcut.verion>
+      <cdk.version>2.37.1</cdk.version>
+      <constrcut.verion>2.0.63</constrcut.verion>
       <junit.version>5.7.1</junit.version>
 </properties>
  .
@@ -161,7 +161,7 @@ $ mvn package
      <!-- AWS Cloud Development Kit -->
       <dependency>
             <groupId>software.amazon.awscdk</groupId>
-            <artifactId>core</artifactId>
+            <artifactId>aws-cdk-lib</artifactId>
             <version>${cdk.version}</version>
       </dependency>
       <dependency>
