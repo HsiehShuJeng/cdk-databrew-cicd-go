@@ -61,6 +61,9 @@ func (j *jsiiProxy_CodePipelineIamRole) RoleArn() *string {
 func NewCodePipelineIamRole(scope constructs.Construct, name *string, props *CodePipelineIamRoleProps) CodePipelineIamRole {
 	_init_.Initialize()
 
+	if err := validateNewCodePipelineIamRoleParameters(scope, name, props); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_CodePipelineIamRole{}
 
 	_jsii_.Create(
@@ -102,6 +105,9 @@ func NewCodePipelineIamRole_Override(c CodePipelineIamRole, scope constructs.Con
 func CodePipelineIamRole_IsConstruct(x interface{}) *bool {
 	_init_.Initialize()
 
+	if err := validateCodePipelineIamRole_IsConstructParameters(x); err != nil {
+		panic(err)
+	}
 	var returns *bool
 
 	_jsii_.StaticInvoke(

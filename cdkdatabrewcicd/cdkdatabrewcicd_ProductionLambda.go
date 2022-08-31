@@ -73,6 +73,9 @@ func (j *jsiiProxy_ProductionLambda) RoleName() *string {
 func NewProductionLambda(scope constructs.Construct, name *string, props *ProductionLambdaProps) ProductionLambda {
 	_init_.Initialize()
 
+	if err := validateNewProductionLambdaParameters(scope, name, props); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_ProductionLambda{}
 
 	_jsii_.Create(
@@ -114,6 +117,9 @@ func NewProductionLambda_Override(p ProductionLambda, scope constructs.Construct
 func ProductionLambda_IsConstruct(x interface{}) *bool {
 	_init_.Initialize()
 
+	if err := validateProductionLambda_IsConstructParameters(x); err != nil {
+		panic(err)
+	}
 	var returns *bool
 
 	_jsii_.StaticInvoke(

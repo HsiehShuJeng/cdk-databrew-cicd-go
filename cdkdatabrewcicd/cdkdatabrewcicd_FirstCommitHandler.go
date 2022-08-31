@@ -73,6 +73,9 @@ func (j *jsiiProxy_FirstCommitHandler) RoleName() *string {
 func NewFirstCommitHandler(scope constructs.Construct, name *string, props *FirstCommitHandlerProps) FirstCommitHandler {
 	_init_.Initialize()
 
+	if err := validateNewFirstCommitHandlerParameters(scope, name, props); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_FirstCommitHandler{}
 
 	_jsii_.Create(
@@ -114,6 +117,9 @@ func NewFirstCommitHandler_Override(f FirstCommitHandler, scope constructs.Const
 func FirstCommitHandler_IsConstruct(x interface{}) *bool {
 	_init_.Initialize()
 
+	if err := validateFirstCommitHandler_IsConstructParameters(x); err != nil {
+		panic(err)
+	}
 	var returns *bool
 
 	_jsii_.StaticInvoke(

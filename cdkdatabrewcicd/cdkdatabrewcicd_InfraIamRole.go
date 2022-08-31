@@ -48,6 +48,9 @@ func (j *jsiiProxy_InfraIamRole) RoleArn() *string {
 func NewInfraIamRole(scope constructs.Construct, name *string, props *InfraIamRoleProps) InfraIamRole {
 	_init_.Initialize()
 
+	if err := validateNewInfraIamRoleParameters(scope, name, props); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_InfraIamRole{}
 
 	_jsii_.Create(
@@ -89,6 +92,9 @@ func NewInfraIamRole_Override(i InfraIamRole, scope constructs.Construct, name *
 func InfraIamRole_IsConstruct(x interface{}) *bool {
 	_init_.Initialize()
 
+	if err := validateInfraIamRole_IsConstructParameters(x); err != nil {
+		panic(err)
+	}
 	var returns *bool
 
 	_jsii_.StaticInvoke(

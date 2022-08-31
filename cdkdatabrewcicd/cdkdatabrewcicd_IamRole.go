@@ -51,6 +51,9 @@ func (j *jsiiProxy_IamRole) RoleArn() *string {
 func NewIamRole(scope constructs.Construct, name *string, props *IamRoleProps) IamRole {
 	_init_.Initialize()
 
+	if err := validateNewIamRoleParameters(scope, name, props); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_IamRole{}
 
 	_jsii_.Create(
@@ -92,6 +95,9 @@ func NewIamRole_Override(i IamRole, scope constructs.Construct, name *string, pr
 func IamRole_IsConstruct(x interface{}) *bool {
 	_init_.Initialize()
 
+	if err := validateIamRole_IsConstructParameters(x); err != nil {
+		panic(err)
+	}
 	var returns *bool
 
 	_jsii_.StaticInvoke(

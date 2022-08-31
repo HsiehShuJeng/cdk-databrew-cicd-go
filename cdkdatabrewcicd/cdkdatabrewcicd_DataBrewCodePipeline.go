@@ -132,6 +132,9 @@ func (j *jsiiProxy_DataBrewCodePipeline) RepoName() *string {
 func NewDataBrewCodePipeline(scope constructs.Construct, name *string, props *DataBrewCodePipelineProps) DataBrewCodePipeline {
 	_init_.Initialize()
 
+	if err := validateNewDataBrewCodePipelineParameters(scope, name, props); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_DataBrewCodePipeline{}
 
 	_jsii_.Create(
@@ -173,6 +176,9 @@ func NewDataBrewCodePipeline_Override(d DataBrewCodePipeline, scope constructs.C
 func DataBrewCodePipeline_IsConstruct(x interface{}) *bool {
 	_init_.Initialize()
 
+	if err := validateDataBrewCodePipeline_IsConstructParameters(x); err != nil {
+		panic(err)
+	}
 	var returns *bool
 
 	_jsii_.StaticInvoke(
