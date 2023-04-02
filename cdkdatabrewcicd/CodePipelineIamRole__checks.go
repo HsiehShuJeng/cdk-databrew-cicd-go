@@ -1,5 +1,4 @@
 //go:build !no_runtime_type_checking
-// +build !no_runtime_type_checking
 
 // A construct for AWS Glue DataBrew wtih CICD
 package cdkdatabrewcicd

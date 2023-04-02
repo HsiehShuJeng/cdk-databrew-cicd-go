@@ -1,5 +1,4 @@
 //go:build !no_runtime_type_checking
-// +build !no_runtime_type_checking
 
 // A construct for AWS Glue DataBrew wtih CICD
 package cdkdatabrewcicd
@@ -12,7 +11,7 @@ import (
 	"github.com/aws/constructs-go/constructs/v10"
 )
 
-func validatePreProductionLambda_IsConstructParameters(x interface{}) error {
+func validateFirstCommitHandler_IsConstructParameters(x interface{}) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -20,7 +19,7 @@ func validatePreProductionLambda_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
-func validateNewPreProductionLambdaParameters(scope constructs.Construct, name *string, props *PreProductionLambdaProps) error {
+func validateNewFirstCommitHandlerParameters(scope constructs.Construct, name *string, props *FirstCommitHandlerProps) error {
 	if scope == nil {
 		return fmt.Errorf("parameter scope is required, but nil was provided")
 	}
