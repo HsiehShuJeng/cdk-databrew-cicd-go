@@ -152,8 +152,8 @@ $ mvn package
 .
 <properties>
       <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-      <cdk.version>2.37.1</cdk.version>
-      <constrcut.verion>2.0.109</constrcut.verion>
+      <cdk.version>2.87.0</cdk.version>
+      <constrcut.verion>2.0.196</constrcut.verion>
       <junit.version>5.7.1</junit.version>
 </properties>
  .
@@ -230,7 +230,7 @@ You could also refer to [here](https://github.com/HsiehShuJeng/cdk-databrew-cicd
 
 ```bash
 $ cdk init --language csharp
-$ dotnet add src/Csharp package Databrew.Cicd --version 2.0.109
+$ dotnet add src/Csharp package Databrew.Cicd --version 2.0.196
 ```
 
 ```cs
@@ -284,7 +284,7 @@ You could also refer to [here](src/demo/go_lang/).
 # Initialize a new AWS CDK application in the current directory with the Go programming language
 cdk init app -l go
 # Add this custom CDK construct to your project
-go get github.com/HsiehShuJeng/cdk-databrew-cicd-go/cdkdatabrewcicd/v2@v2.0.109
+go get github.com/HsiehShuJeng/cdk-databrew-cicd-go/cdkdatabrewcicd/v2@v2.0.196
 # Ensure all dependencies are properly listed in the go.mod file and remove any unused ones
 go mod tidy
 # Upgrade all Go modules in your project to their latest minor or patch versions
