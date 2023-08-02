@@ -9,8 +9,12 @@ type FirstCommitHandlerProps struct {
 	// The name of the CodeCommit repo.
 	RepoName *string `field:"required" json:"repoName" yaml:"repoName"`
 	// The name of the Lambda function which deals with first commit via AWS CodeCommit.
+	// Default: 'FirstCommitHandler'.
+	//
 	FunctionName *string `field:"optional" json:"functionName" yaml:"functionName"`
 	// The name of the IAM role for the Lambda function which deals with first commit via AWS CodeCommit.
+	// Default: 'LambdaForInitialCommitRole'.
+	//
 	RoleName *string `field:"optional" json:"roleName" yaml:"roleName"`
 }
 

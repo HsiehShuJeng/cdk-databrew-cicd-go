@@ -9,6 +9,8 @@ type CodePipelineIamRoleProps struct {
 	// The ARN of the Lambda function for the production account.
 	ProductionLambdaArn *string `field:"required" json:"productionLambdaArn" yaml:"productionLambdaArn"`
 	// The role name for the CodePipeline CICD pipeline.
+	// Default: 'DataBrew-Recipe-Pipeline-Role'.
+	//
 	RoleName *string `field:"optional" json:"roleName" yaml:"roleName"`
 }
 

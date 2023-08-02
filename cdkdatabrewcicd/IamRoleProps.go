@@ -7,6 +7,8 @@ type IamRoleProps struct {
 	// 'preproduction' or 'production'.
 	Environment *string `field:"required" json:"environment" yaml:"environment"`
 	// The role name.
+	// Default: '{environment}-Databrew-Cicd-Role'.
+	//
 	RoleName *string `field:"optional" json:"roleName" yaml:"roleName"`
 }
 
